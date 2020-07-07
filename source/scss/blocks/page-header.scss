@@ -243,13 +243,14 @@
     padding: 0 0.5em 0.5em;
 
     &::after {
+
       content: "";
       position: absolute;
       bottom: 0;
-      width: 100%;
+      width: 0;
       height: 2px;
       background-color: $c-light;
-      display: none;
+      display: block;
       left: 0;
 
       @media (max-width: $tablet) and (orientation: portrait) {
@@ -268,6 +269,7 @@
     &.active {
       &::after {
         display: block;
+        width: 100%;
       }
     }
 
@@ -275,9 +277,10 @@
     &:focus {
       color: $c-purple;
       outline: none;
-
       &::after {
-        opacity: 1;
+        transition-duration: 1s;
+        transition-property: width;
+        width: 100%;
         background-color: $c-purple;
       }
     }

@@ -1,10 +1,25 @@
 .social-block {
   position: relative;
-
+  .social-block__list { 
+    li {
+      opacity: 0;
+    }
+  }
+  
   &:hover {
     .social-block__list {
+      transition-property: opacity;
+      transition-duration: 0.5s;
       opacity: 1;
       pointer-events: auto;
+      @for $i from 1 through 3 {
+        li:nth-child(#{$i}) {
+          opacity: 1;
+          transition-property: opacity;
+          transition-delay: 0.3s * $i;
+          transition-duration: 0.3s + 0.3s * $i;
+        }
+      }
     }
   }
 }

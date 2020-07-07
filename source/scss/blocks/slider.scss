@@ -1,3 +1,53 @@
+@-moz-keyframes fadeIn {
+  0% {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+
 .slider {
   position: relative;
   flex-grow: 1;
@@ -15,6 +65,7 @@
 
 .slider__item {
   display: flex;
+  animation: fadeIn 1s;
   flex-direction: column;
   padding: 14.6rem 4rem 10rem 9.7rem;
   height: auto;
