@@ -243,15 +243,16 @@
     padding: 0 0.5em 0.5em;
 
     &::after {
-
+      transition: 1s;
+      transition-property: left, width;
       content: "";
       position: absolute;
+      width: 0%;
+      left: 100%;
       bottom: 0;
-      width: 0;
       height: 2px;
       background-color: $c-light;
       display: block;
-      left: 0;
 
       @media (max-width: $tablet) and (orientation: portrait) {
         left: 0;
@@ -268,9 +269,15 @@
 
     &.active {
       &::after {
+        left: 0;
         display: block;
         width: 100%;
       }
+    }
+
+    &:hover {
+      transition: 1s;
+      transition-property: color;
     }
 
     &:hover,
@@ -278,9 +285,9 @@
       color: $c-purple;
       outline: none;
       &::after {
-        transition-duration: 1s;
-        transition-property: width;
+        left: 0;
         width: 100%;
+        transition-property: width, color;
         background-color: $c-purple;
       }
     }

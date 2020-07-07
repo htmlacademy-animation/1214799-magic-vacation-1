@@ -1,15 +1,23 @@
 .social-block {
   position: relative;
   .social-block__list { 
-    li {
-      opacity: 0;
+    transition-property: opacity;
+    opacity: 1;
+    @for $i from 1 through 3 {
+      li:nth-child(#{4 - $i}) {
+        opacity: 0;
+        transition-property: opacity;
+        transition-delay: 0.3s * $i;
+        transition-duration: 0.3s + 0.3s * $i;
+      }
     }
   }
-  
+
   &:hover {
     .social-block__list {
       transition-property: opacity;
-      transition-duration: 0.5s;
+      transition-delay: 0;
+      transition-duration: 0.3s;
       opacity: 1;
       pointer-events: auto;
       @for $i from 1 through 3 {
@@ -201,6 +209,8 @@
 
   &:hover {
     color: $c-purple;
+    transition-property: color;
+    transition-duration: 0.3s;
   }
 
   &:focus {
