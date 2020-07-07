@@ -63,9 +63,16 @@
   }
 }
 
+.swiper-slide-active {
+  animation: fadeIn 1s;
+}
+
+.swiper-slide-next {
+  animation: fadeIn 1s;
+}
+
 .slider__item {
   display: flex;
-  animation: fadeIn 1s;
   flex-direction: column;
   padding: 14.6rem 4rem 10rem 9.7rem;
   height: auto;
