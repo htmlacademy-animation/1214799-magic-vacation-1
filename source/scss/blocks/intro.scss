@@ -86,59 +86,9 @@
   }
 }
 
-@-moz-keyframes fadeIn {
-  0% {
-    position: relative;
-    top: 3rem;
-    opacity: 0;
-  }
-
-  100% {
-    top: 0;
-    opacity: 1;
-  }
-}
-@-ms-keyframes fadeIn {
-  0% {
-    position: relative;
-    top: 3rem;
-    opacity: 0;
-  }
-
-  100% {
-    top: 0;
-    opacity: 1;
-  }
-}
-@-o-keyframes fadeIn {
-  0% {
-    position: relative;
-    top: 3rem;
-    opacity: 0;
-  }
-
-  100% {
-    top: 0;
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    position: relative;
-    top: 3rem;
-    opacity: 0;
-  }
-
-  100% {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-
 .intro__message {
   flex: none;
-  animation: fadeIn 2s;
+  animation: fadeIn ease-out 0.5s;
   width: 50.9rem;
   max-width: 50%;
   text-transform: uppercase;

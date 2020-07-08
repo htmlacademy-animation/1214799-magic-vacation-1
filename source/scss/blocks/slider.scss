@@ -1,48 +1,48 @@
 @-moz-keyframes fadeIn {
   0% {
     position: relative;
-    top: 3rem;
+    transform: translateY(3rem);
     opacity: 0;
   }
 
   100% {
-    top: 0;
+    transform: translateY(0rem);
     opacity: 1;
   }
 }
 @-ms-keyframes fadeIn {
   0% {
     position: relative;
-    top: 3rem;
+    transform: translateY(3rem);
     opacity: 0;
   }
 
   100% {
-    top: 0;
+    transform: translateY(0rem);
     opacity: 1;
   }
 }
 @-o-keyframes fadeIn {
   0% {
     position: relative;
-    top: 3rem;
+    transform: translateY(3rem);
     opacity: 0;
   }
 
   100% {
-    top: 0;
+    transform: translateY(0rem);
     opacity: 1;
   }
 }
 @keyframes fadeIn {
   0% {
     position: relative;
-    top: 3rem;
+    transform: translateY(3rem);
     opacity: 0;
   }
 
   100% {
-    top: 0;
+    transform: translateY(0rem);
     opacity: 1;
   }
 }
