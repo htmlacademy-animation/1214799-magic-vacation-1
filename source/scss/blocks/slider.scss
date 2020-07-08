@@ -1,3 +1,53 @@
+@-moz-keyframes fadeIn {
+  0% {
+    position: relative;
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    position: relative;
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    position: relative;
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    position: relative;
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
+
 .slider {
   position: relative;
   flex-grow: 1;
@@ -13,6 +63,14 @@
   }
 }
 
+.swiper-slide-active {
+  animation: fadeIn 1s;
+}
+
+.swiper-slide-next {
+  animation: fadeIn 1s;
+}
+
 .slider__item {
   display: flex;
   flex-direction: column;
@@ -20,7 +78,7 @@
   height: auto;
 
   @media (min-width: $stop-scaling) {
-    padding: 146px 40px 100px 97px;
+    padding: 146px 40px 3rem 97px;
   }
 
   @media (orientation: portrait) {
