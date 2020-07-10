@@ -38,7 +38,17 @@
   z-index: 1;
 }
 
+.ready {
+  .screen__footer {
+    transform: translateY(0);
+  }
+}
+
 .screen__footer {
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(.31,1.28,.62,.64);
+  transform: translateY(3rem);
   position: absolute;
   bottom: 0;
   left: 0;
