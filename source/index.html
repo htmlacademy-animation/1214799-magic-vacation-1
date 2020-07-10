@@ -8,7 +8,12 @@
   <title>Mysterious Vacation</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<script type="text/javascript">
+function load() {
+  document.body.classList.add('ready');
+}
+</script>
+<body onload="load()">
 
   <header class="page-header js-header">
     <div class="page-header__wrapper">

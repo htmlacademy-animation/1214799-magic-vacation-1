@@ -26,7 +26,27 @@
   justify-content: space-between;
 }
 
+.ready {
+  .page-header__logo {
+    transition-property: opacity, transform;
+    transition-duration: 0.3s;
+    opacity: 1;
+    transform: translateX(0);
+    transition-timing-function: cubic-bezier(.31,1.28,.62,.64);
+  }
+
+  .page-header__nav {
+    transition-property: opacity;
+    transition-delay: 0.3s;
+    transition-duration: 0.3s;
+    opacity: 1;
+    transition-timing-function: cubic-bezier(.31,1.28,.62,.64);
+  }
+}
+
 .page-header__logo {
+  opacity: 0;
+  transform: translateX(-3rem);
   @include hover;
   position: relative;
   flex: none;
@@ -128,6 +148,7 @@
 }
 
 .page-header__nav {
+  opacity: 0;
   display: flex;
   align-items: center;
 
