@@ -29,8 +29,49 @@
   }
 }
 
+@-moz-keyframes fadeInSlider {
+  0% {
+    left: 100%
+  }
+
+  100% {
+    left: 0%
+  }
+}
+@-ms-keyframes fadeInSlider {
+  0% {
+    left: 100%
+  }
+
+  100% {
+    left: 0%
+  }
+}
+@-o-keyframes fadeInSlider {
+  0% {
+    left: 100%
+  }
+
+  100% {
+    left: 0%
+  }
+}
+@keyframes fadeInSlider {
+  0% {
+    left: 100%
+  }
+
+  100% {
+    left: 0%
+  }
+}
+
+
 .form__field {
   flex: none;
+  position: relative;
+  left: 0%;
+  animation: fadeInSlider 1s; 
   margin-right: 3rem;
   padding: 0 5.6rem;
   height: 6rem;

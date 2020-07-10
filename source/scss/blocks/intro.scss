@@ -88,6 +88,7 @@
 
 .intro__message {
   flex: none;
+  animation: fadeIn ease-out 0.5s;
   width: 50.9rem;
   max-width: 50%;
   text-transform: uppercase;
