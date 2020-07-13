@@ -2937,17 +2937,16 @@ img {
 
 .fon {
   transition-duration: 1s;
-  transition-property: height;
   position: absolute;
   width: 100%;
   background-color: #5f458c;
-  z-index: 1; }
+  z-index: 1;
+  height: 100%;
+  transform: translateY(100%); }
 
-.screen--prizes:not(.active) .fon {
-  height: 0; }
-
-.screen--prizes.active .fon {
-  height: 100%; }
+.fon.active {
+  height: 100%;
+  transform: translateY(0); }
 
 @-moz-keyframes fadeIn {
   0% {
