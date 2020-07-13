@@ -20,5 +20,33 @@ result();
 form();
 social();
 
+const prizes = document.getElementById("prizes");
+const fon = document.getElementById("fon");
+const story = document.getElementById("story-link");
+let access = false;
+
+function reset() {
+	fon.classList.remove("active");
+}
+
+function start() {
+	fon.classList.add("active");
+}
+
+story.onclick = function() {
+	access = true;
+} 
+
+prizes.onclick = function() {
+	if(access) {
+		setTimeout(() => start(), 1);
+		setTimeout(() => reset(), 1500);
+		access = false;
+	}
+}
+
+
+
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
+
