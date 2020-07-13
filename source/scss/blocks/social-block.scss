@@ -25,7 +25,7 @@
           opacity: 1;
           transition-property: opacity;
           transition-delay: 0.2s * $i;
-          transition-duration: 0.2s + 0.2s * $i;
+          transition-duration: 0.2s + 0.1s * $i * 2.5;
         }
       }
     }

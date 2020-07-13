@@ -364,3 +364,19 @@
 .screen--rules {
   background-color: $c-dark;
 }
+
+.fon {
+  transition-duration: 1s;
+  position: absolute;
+  width: 100%;
+  background-color: #5f458c;
+  z-index: 1;
+  height: 100%;
+  transform: translateY(100%)
+}
+
+.fon.active {
+  height: 100%;
+  transform: translateY(0)
+}
+
