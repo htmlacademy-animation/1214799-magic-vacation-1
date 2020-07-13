@@ -8,7 +8,12 @@
   <title>Mysterious Vacation</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<script type="text/javascript">
+function load() {
+  document.body.classList.add('ready');
+}
+</script>
+<body onload="load()">
 
   <header class="page-header js-header">
     <div class="page-header__wrapper">
@@ -28,7 +33,7 @@
               <a class="js-menu-link" href="#story" data-href="story">история</a>
             </li>
             <li>
-              <a class="js-menu-link" href="#prizes" data-href="prizes">призы</a>
+              <a class="js-menu-link" href="#prizes" id="prizes" data-href="prizes">призы</a>
             </li>
             <li>
               <a class="js-menu-link" href="#rules" data-href="rules">правила</a>
@@ -263,6 +268,7 @@
           </div>
         </div>
       </div>
+      <div id="fon" class="fon"></div>
     </section>
 
     <section class="screen screen--hidden screen--rules js-scrollspy" id="rules">
@@ -495,7 +501,6 @@
         </div>
       </div>
     </section>
-
   </main>
 
 </body>

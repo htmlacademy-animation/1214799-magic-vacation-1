@@ -364,3 +364,24 @@
 .screen--rules {
   background-color: $c-dark;
 }
+
+.fon {
+  transition-duration: 1s;
+  transition-property: height;
+  position: absolute;
+  width: 100%;
+  background-color: #5f458c;
+  z-index: 1;
+}
+
+.screen--prizes:not(.active) {
+  & .fon {
+    height: 0;
+  }
+}
+
+.screen--prizes.active {
+  & .fon {
+    height: 100%;
+  }
+}
