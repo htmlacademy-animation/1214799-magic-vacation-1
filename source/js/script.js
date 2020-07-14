@@ -8,6 +8,7 @@ import result from './modules/result.js';
 import form from './modules/form.js';
 import social from './modules/social.js';
 import FullPageScroll from './modules/full-page-scroll';
+import AccentTypographyBuild from './modules/literal-animate';
 
 
 // init modules
@@ -45,7 +46,15 @@ prizes.onclick = function() {
 	}
 }
 
+const animationTopScreenTextLine = new AccentTypographyBuild(`.intro__title`, 500, `active`, `transform`);
+setTimeout(()=>{
+  animationTopScreenTextLine.runAnimation();
+}, 500);
 
+const animationSubScreenTextLine = new AccentTypographyBuild(`.intro__date`, 500, `active`, `transform`);
+setTimeout(()=>{
+  animationSubScreenTextLine.runAnimation();
+}, 1500);
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();

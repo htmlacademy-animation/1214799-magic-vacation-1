@@ -380,3 +380,30 @@
   transform: translateY(0)
 }
 
+.text__word {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.text__word {
+  span {
+    transform: translate3d(0, 1em, 0);
+    display: inline-block;
+  }
+} 
+
+.intro__title.active {
+  .text__word {
+    span {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}  
+
+.intro__date.active {
+  .text__word {
+    span {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}  
