@@ -2658,7 +2658,10 @@ img {
 
 @keyframes button {
   from {
-    max-width: 0; }
+    max-width: 0;
+    opacity: 0; }
+  0% {
+    pacity: 1; }
   to {
     max-width: 100%; } }
 
