@@ -233,6 +233,11 @@
 @keyframes button {
 	from {
 		max-width: 0;
+		opacity: 0;
+	}
+
+	0% {
+		pacity: 1;
 	}
 
 	to {
