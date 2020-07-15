@@ -334,3 +334,43 @@
     }
   }
 }
+
+@keyframes button-slider--prev {
+	from {
+		transform: translateX(-100px) rotate(0);
+	}
+
+	to {
+		transform: translateX(0) rotate(360deg);
+	}
+}
+
+@keyframes button-slider--next {
+	from {
+		transform: translateX(100px) rotate(0);
+	}
+
+	to {
+		transform: translateX(0) rotate(-360deg);
+	}
+}
+
+
+.screen--story.active {
+	.slider__control--prev {
+		animation-name: button-slider--prev;
+		animation-duration: 1s;
+		animation-fill-mode: both;
+		animation-direction: normal;
+		animation-timing-function: cubic-bezier(.38,1.78,.83,.67);
+	}
+
+	.slider__control--next {
+		animation-name: button-slider--next;
+		animation-duration: 1s;
+		animation-fill-mode: both;
+		animation-direction: normal;
+		animation-timing-function: cubic-bezier(.38,1.78,.83,.67);
+	}
+}
+
