@@ -59,3 +59,10 @@ setTimeout(()=>{
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
 
+var myobj = document.getElementById("second-prize");
+myobj.remove();
+
+var DOM_img = document.createElement("img");
+DOM_img.src = "img/secondary-award-from.svg?rand" + Date.now();
+var DOM_a = document.getElementById("second-prize-cover");
+DOM_a.appendChild(DOM_img);

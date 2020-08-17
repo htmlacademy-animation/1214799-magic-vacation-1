@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 350 330">
   <style>
-    g, #path-suitcase, .flower1, .flower2 {
+    g, #path-suitcase, .flower1, .flower2, #prize2 {
       transform-origin: 50% 50% !important;
     }
   </style>
@@ -105,7 +105,7 @@
     <line x1="41.13" y1="329" x2="319.13" y2="329" fill="none" stroke="#fff" stroke-width="2"/>
   </g>
 
-  <g class="prize2" transform="scale(0)">
+  <g class="prize2" id="prize2" transform="scale(0)">
    <animateTransform attributeName="transform"
       type="scale"
       from="0"
@@ -115,6 +115,7 @@
       fill="freeze" 
       repeatCount="1"
     />
+
    <animateTransform attributeName="transform"
       type="translate"
       from="-200,-280"
@@ -137,6 +138,7 @@
       additive="sum"
       begin="clouds.end"
       id="step1"
+      calcMode="spline"
     />
 
     <animateTransform attributeName="transform"
@@ -150,6 +152,7 @@
       repeatCount="1"
       additive="sum"
       id="step2"
+      calcMode="spline"
     />
 
     <animateTransform attributeName="transform"
@@ -163,6 +166,7 @@
       repeatCount="1"
       additive="sum"
       id="step3"
+      calcMode="spline"
     />
 
    <animateTransform attributeName="transform"
@@ -176,6 +180,7 @@
       repeatCount="1"
       additive="sum"
       id="step4"
+      calcMode="spline"
     />
 
     <animateTransform attributeName="transform"
@@ -189,6 +194,7 @@
       repeatCount="1"
       additive="sum"
       id="step5"
+      calcMode="spline"
     />
 
     <animateMotion dur="2s" calcMode="linear" fill="freeze" begin="clouds.end" >
