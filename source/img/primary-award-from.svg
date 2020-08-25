@@ -17,7 +17,6 @@
     repeatCount="1"
   />
 
-
   <animate attributeType="CSS" attributeName="opacity" xlink:href="#cloud3"
      begin="3s"
      from="1" 
@@ -37,7 +36,6 @@
 
   <g id="fon"> 
     <g id="airship">
-
       <animateTransform attributeName="transform"
         type="scale"
         values="1 1; 1 .985; 1 1"
@@ -191,7 +189,6 @@
         repeatCount="1"
       />
 
-
       <g id="chair">
         <path d="M257.5,259.82H196.76V245.63h55.09a9.92,9.92,0,0,1,9.9,9.93,4.26,4.26,0,0,1-4.25,4.25" fill="#a67ee5"/>
         <path d="M257.5,259.82H196.76V245.63h55.09a9.92,9.92,0,0,1,9.9,9.93A4.26,4.26,0,0,1,257.5,259.82Z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
@@ -207,7 +204,6 @@
         <path d="M206.26,259.82h-72l-2.13-14.19H200.6a9.92,9.92,0,0,1,9.9,9.93A4.26,4.26,0,0,1,206.26,259.82Z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
         <line x1="151.57" y1="195.44" x2="209.05" y2="195.44" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
       </g>
-
 
       <g id="branch">
         <animateTransform attributeName="transform"

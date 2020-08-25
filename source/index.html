@@ -197,9 +197,14 @@ function load() {
             <p>Найди ответ и&nbsp;получи один из&nbsp;призов:</p>
           </div>
 
-          <picture style="height: 300px; width: 300px">
+          <picture style="height: 300px; width: 300px; display: none;" class="prize-start" >
             <source srcset="img/primary-award-from.svg" media="(orientation: portrait)">
             <img class="airship" src="img/primary-award-from.svg" alt="">
+          </picture>
+
+          <picture id="second-prize-cover" style="height: 300px; width: 300px;">
+            <source srcset="img/secondary-award-from.svg" media="(orientation: portrait)">
+            <img id="second-prize" src="img/secondary-award-from.svg" alt="">
           </picture>
 
           <ul class="prizes__list">
