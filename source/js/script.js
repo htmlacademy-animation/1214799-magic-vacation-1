@@ -66,3 +66,8 @@ var DOM_img = document.createElement("img");
 DOM_img.src = "img/secondary-award-from.svg?rand" + Date.now();
 var DOM_a = document.getElementById("second-prize-cover");
 DOM_a.appendChild(DOM_img);
+
+var DOM_aditionalImg = document.createElement("img");
+DOM_aditionalImg.src = "img/additional-award-to.svg?rand" + Date.now();
+var DOM_aditional = document.getElementById("additional-award-cover");
+DOM_aditional.appendChild(DOM_aditionalImg);
